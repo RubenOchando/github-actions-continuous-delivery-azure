@@ -9,7 +9,7 @@ env:
   DOCKER_IMAGE_NAME: RubenOchando-azure-ttt
   IMAGE_REGISTRY_URL: docker.pkg.github.com
   #################################################
-  ### USER PROVIDED VALUES ARE REQUIRED BELOW   :-))###
+  ### USER PROVIDED VALUES ARE REQUIRED BELOW   ###
   #################################################
   #################################################
   ### REPLACE USERNAME WITH GH USERNAME         ###
@@ -18,6 +18,6 @@ env:
 
 jobs:
   build:
-    if: contains(github.event.pull_request.labels, 'stage')
     runs-on: ubuntu-latest
 
+    if: contains(github.event.pull_request.labels, 'stage')
