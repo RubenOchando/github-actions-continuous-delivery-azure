@@ -11,7 +11,7 @@ env:
   ### USER PROVIDED VALUES ARE REQUIRED BELOW   ###
   #################################################
   #################################################
-  ### REPLACE USERNAME WITH GH USERNAME         ###
+  ### REPLACE USERNAME WITH GH USERNAME      ######
   AZURE_WEBAPP_NAME: RubenOchando-ttt-app
   #################################################
 
