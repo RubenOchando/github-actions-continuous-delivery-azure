@@ -1,4 +1,4 @@
-name: Stage App
+name: Stage the app
 
 on: 
   pull_request:
@@ -10,7 +10,6 @@ env:
   #################################################
   ### USER PROVIDED VALUES ARE REQUIRED BELOW   ###
   #################################################
-  
   #################################################
   ### REPLACE USERNAME WITH GH USERNAME         ###
   AZURE_WEBAPP_NAME: RubenOchando-ttt-app
@@ -20,4 +19,4 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
-    if: contains(github.event.pull_request.labels.*.name, 'stage')
+    if: contains(github.event.pull_request.labels, 'stage')
